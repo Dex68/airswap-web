@@ -9,7 +9,6 @@ import { ThemeProvider } from "styled-components/macro";
 import { useAppSelector } from "./app/hooks";
 import Page from "./components/Page/Page";
 import PageLoader from "./components/PageLoader/PageLoader";
-import Toaster from "./components/Toasts/Toaster";
 import { selectUserSettings } from "./features/userSettings/userSettingsSlice";
 import "./i18n/i18n";
 import GlobalStyle from "./style/GlobalStyle";
@@ -34,7 +33,6 @@ const App = (): JSX.Element => {
               <Page />
             </Route>
           </Router>
-          <Toaster />
         </Suspense>
       </Web3ReactProvider>
       <GlobalStyle />
